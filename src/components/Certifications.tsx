@@ -16,7 +16,7 @@ const Certifications = () => {
       type: "Cloud & IoT",
       description: "Comprehensive training on AWS IoT services, device management, and cloud integration for IoT applications.",
       skills: ["AWS IoT Core", "Device Management", "Cloud Integration", "MQTT"],
-      credentialUrl: "#",
+      credentialUrl: "https://drive.google.com/drive/folders/1beJ-FUR_qat3Jptq35LWjWsMjbk50w3D?usp=drive_link",
       certificateFile: "aws-iot-certificate.pdf"
     },
     {
@@ -26,7 +26,7 @@ const Certifications = () => {
       type: "Innovation & Design",
       description: "Learned systematic approach to innovation and problem-solving using design thinking methodologies.",
       skills: ["Design Thinking", "Innovation", "Problem Solving", "User Experience"],
-      credentialUrl: "#",
+      credentialUrl: "https://drive.google.com/drive/folders/1beJ-FUR_qat3Jptq35LWjWsMjbk50w3D?usp=drive_link",
       certificateFile: "design-thinking-certificate.pdf"
     },
     {
@@ -37,7 +37,7 @@ const Certifications = () => {
       certificateId: "E19E86-0116588288923",
       description: "Industry-approved certification in digital electronics fundamentals and VLSI design principles.",
       skills: ["Digital Electronics", "VLSI Design", "Logic Circuits", "Semiconductor Technology"],
-      credentialUrl: "#",
+      credentialUrl: "https://drive.google.com/drive/folders/1beJ-FUR_qat3Jptq35LWjWsMjbk50w3D?usp=drive_link",
       certificateFile: "Aditya Anand Mittha - Certificate.pdf",
       featured: true
     }
@@ -112,34 +112,31 @@ const Certifications = () => {
               </div>
               
               <div className="flex space-x-2">
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <Eye className="w-4 h-4 mr-1" />
-                      View Certificate
-                    </Button>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-4xl">
-                    <DialogHeader>
-                      <DialogTitle>{cert.title}</DialogTitle>
-                    </DialogHeader>
-                    <div className="aspect-[4/3] bg-muted rounded-lg flex items-center justify-center">
-                      <div className="text-center text-muted-foreground">
-                        <Award className="w-16 h-16 mx-auto mb-4" />
-                        <p>Certificate preview would be displayed here</p>
-                        <p className="text-sm">File: {cert.certificateFile}</p>
-                      </div>
-                    </div>
-                  </DialogContent>
-                </Dialog>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="flex-1"
+                  asChild
+                >
+                  <a 
+                    href={cert.credentialUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Eye className="w-4 h-4 mr-1" />
+                    View Certificate
+                  </a>
+                </Button>
                 
-                {cert.credentialUrl && (
-                  <Button variant="ghost" size="sm" asChild>
-                    <a href={cert.credentialUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </Button>
-                )}
+                <Button variant="ghost" size="sm" asChild>
+                  <a 
+                    href={cert.credentialUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </Button>
               </div>
             </Card>
           ))}
