@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Phone, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -21,43 +21,71 @@ const Hero = () => {
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6">
             Hi, I'm{' '}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Your Name
+              Aditya Mittha
             </span>
           </h1>
           
-          <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            A passionate developer creating beautiful, functional, and user-centered digital experiences.
+          <p className="text-xl sm:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
+            Electronics Engineer | IoT Developer | Innovator in Embedded Tech
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Motivated and detail-oriented Embedded Systems Engineer with a strong foundation in IoT, 
+            C/C++ programming, and hardware-software integration.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button 
               onClick={() => scrollToSection('projects')}
               size="lg"
               className="text-lg px-8 py-6"
             >
-              View My Work
+              View My Projects
             </Button>
             <Button 
-              onClick={() => scrollToSection('contact')}
               variant="outline" 
               size="lg"
               className="text-lg px-8 py-6"
             >
-              Get In Touch
+              <Download className="mr-2" size={20} />
+              Download Resume
             </Button>
           </div>
           
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+            <a 
+              href="https://github.com" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
               <Github size={28} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+            <a 
+              href="https://linkedin.com/in/adityamittha" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
               <Linkedin size={28} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+            <a 
+              href="mailto:adityamittha09@gmail.com"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
               <Mail size={28} />
             </a>
+            <a 
+              href="tel:+918010542551"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              <Phone size={28} />
+            </a>
+          </div>
+          
+          <div className="text-sm text-muted-foreground mb-8">
+            📍 Solapur, Maharashtra | 📧 adityamittha09@gmail.com | 📱 +91 8010542551
           </div>
         </div>
         

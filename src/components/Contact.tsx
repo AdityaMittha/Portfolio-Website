@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Download } from 'lucide-react';
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -21,7 +21,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+            Let's connect and discuss opportunities in embedded systems, IoT development, or any exciting tech projects.
           </p>
         </div>
         
@@ -49,7 +49,7 @@ const Contact = () => {
                 <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
                   Subject
                 </label>
-                <Input id="subject" placeholder="What's this about?" required />
+                <Input id="subject" placeholder="Project collaboration, internship, or general inquiry" required />
               </div>
               
               <div>
@@ -59,7 +59,7 @@ const Contact = () => {
                 <Textarea 
                   id="message" 
                   rows={5} 
-                  placeholder="Tell me about your project or just say hello!" 
+                  placeholder="Tell me about your project, opportunity, or just say hello!" 
                   required 
                 />
               </div>
@@ -77,43 +77,83 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground">your.email@example.com</span>
+                  <a href="mailto:adityamittha09@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
+                    adityamittha09@gmail.com
+                  </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                  <a href="tel:+918010542551" className="text-muted-foreground hover:text-foreground transition-colors">
+                    +91 8010542551
+                  </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground">Your City, Country</span>
+                  <span className="text-muted-foreground">Solapur, Maharashtra, India</span>
                 </div>
               </div>
             </Card>
             
             <Card className="p-6">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Follow Me</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Connect With Me</h3>
               <div className="flex space-x-4">
-                <a href="#" className="p-3 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors duration-200">
+                <a 
+                  href="https://github.com" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                >
                   <Github className="w-5 h-5" />
                 </a>
-                <a href="#" className="p-3 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors duration-200">
+                <a 
+                  href="https://linkedin.com/in/adityamittha" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                >
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="p-3 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors duration-200">
-                  <Twitter className="w-5 h-5" />
+                <a 
+                  href="mailto:adityamittha09@gmail.com"
+                  className="p-3 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                >
+                  <Mail className="w-5 h-5" />
                 </a>
               </div>
             </Card>
             
             <Card className="p-6 bg-gradient-to-br from-primary/10 to-secondary/10">
-              <h3 className="text-xl font-semibold text-foreground mb-3">Let's Work Together</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-3">Let's Collaborate</h3>
               <p className="text-muted-foreground mb-4">
-                I'm currently available for freelance work and full-time opportunities. 
-                Let's discuss how we can bring your ideas to life!
+                I'm actively seeking opportunities in embedded systems, IoT development, and innovative tech projects. 
+                Open to internships, collaborations, and full-time positions.
               </p>
               <Button variant="outline" className="w-full">
+                <Download className="w-4 h-4 mr-2" />
                 Download Resume
               </Button>
+            </Card>
+            
+            <Card className="p-6">
+              <h3 className="text-xl font-semibold text-foreground mb-3">Current Focus</h3>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span className="text-sm text-muted-foreground">IoT Systems Development</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span className="text-sm text-muted-foreground">Embedded Systems Engineering</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span className="text-sm text-muted-foreground">Smart Device Innovation</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span className="text-sm text-muted-foreground">Hardware-Software Integration</span>
+                </div>
+              </div>
             </Card>
           </div>
         </div>
@@ -122,7 +162,8 @@ const Contact = () => {
       {/* Footer */}
       <div className="mt-20 pt-8 border-t border-border">
         <div className="text-center text-muted-foreground">
-          <p>&copy; 2024 Your Name. All rights reserved.</p>
+          <p>&copy; 2024 Aditya Mittha. All rights reserved.</p>
+          <p className="text-sm mt-2">Electronics Engineer | IoT Developer | Innovator in Embedded Tech</p>
         </div>
       </div>
     </section>

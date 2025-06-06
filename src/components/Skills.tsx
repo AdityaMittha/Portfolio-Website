@@ -6,30 +6,47 @@ import { Progress } from '@/components/ui/progress';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Programming Languages",
       skills: [
-        { name: "React", level: 90 },
-        { name: "TypeScript", level: 85 },
-        { name: "Tailwind CSS", level: 88 },
-        { name: "Next.js", level: 82 },
+        { name: "C/C++", level: 90 },
+        { name: "Embedded C", level: 85 },
+        { name: "Python", level: 80 },
       ]
     },
     {
-      title: "Backend",
+      title: "Hardware & Boards",
       skills: [
-        { name: "Node.js", level: 80 },
-        { name: "Python", level: 75 },
-        { name: "PostgreSQL", level: 78 },
-        { name: "MongoDB", level: 72 },
+        { name: "ESP32", level: 95 },
+        { name: "Arduino", level: 90 },
+        { name: "Raspberry Pi", level: 80 },
+        { name: "PCB Design", level: 75 },
       ]
     },
     {
-      title: "Tools & Others",
+      title: "Tools & Platforms",
       skills: [
-        { name: "Git", level: 90 },
-        { name: "Docker", level: 70 },
-        { name: "AWS", level: 65 },
-        { name: "Figma", level: 80 },
+        { name: "Arduino IDE", level: 95 },
+        { name: "Proteus", level: 85 },
+        { name: "Wokwi", level: 90 },
+        { name: "Firebase", level: 80 },
+      ]
+    },
+    {
+      title: "IoT & Cloud",
+      skills: [
+        { name: "Blynk IoT", level: 85 },
+        { name: "Ubidots", level: 80 },
+        { name: "AWS IoT", level: 75 },
+        { name: "MQTT", level: 80 },
+      ]
+    },
+    {
+      title: "Core Technologies",
+      skills: [
+        { name: "IoT Systems", level: 90 },
+        { name: "Embedded Systems", level: 88 },
+        { name: "VLSI", level: 75 },
+        { name: "Digital Circuits", level: 85 },
       ]
     }
   ];
@@ -42,13 +59,13 @@ const Skills = () => {
             Skills & Technologies
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Here are the technologies and tools I work with to bring ideas to life.
+            Expertise in embedded systems, IoT development, and hardware-software integration
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, categoryIndex) => (
-            <Card key={categoryIndex} className="p-6">
+            <Card key={categoryIndex} className="p-6 hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-xl font-semibold text-foreground mb-6 text-center">
                 {category.title}
               </h3>
