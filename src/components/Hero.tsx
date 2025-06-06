@@ -11,6 +11,12 @@ const Hero = () => {
     }
   };
 
+  const handleResumeDownload = () => {
+    // You can replace this URL with your actual resume URL once uploaded
+    const resumeUrl = "https://drive.google.com/drive/folders/1beJ-FUR_qat3Jptq35LWjWsMjbk50w3D?usp=drive_link";
+    window.open(resumeUrl, '_blank');
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated background gradient */}
@@ -70,6 +76,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
+              onClick={handleResumeDownload}
               className="text-lg px-8 py-6 border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white transform hover:scale-105 transition-all duration-300"
             >
               <Download className="mr-2" size={20} />
