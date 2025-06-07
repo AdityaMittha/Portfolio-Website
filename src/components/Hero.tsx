@@ -52,7 +52,7 @@ const Hero = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fadeInUp">
           {/* Professional Profile Picture */}
-          <div className="mb-8 flex justify-center">
+          <div className="mb-8 flex justify-center my-[75px]">
             <div className="relative">
               <div className="w-40 h-40 rounded-2xl bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 p-1 shadow-2xl">
                 <div className="w-full h-full rounded-2xl bg-white dark:bg-gray-900 flex items-center justify-center relative overflow-hidden">
