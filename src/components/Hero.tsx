@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { ArrowDown, Github, Linkedin, Mail, Phone, Download, Zap, Code, Cpu, CircuitBoard, Microchip } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -130,19 +129,40 @@ const Hero = () => {
         <Zap className="w-full h-full animate-ping-slow" />
       </div>
 
-      {/* Main Content Container - Better Centered */}
+      {/* Main Content Container - Better Centered with Lower Positioning */}
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col items-center justify-center text-center space-y-8"
+        <div className="flex flex-col items-center justify-center text-center space-y-12 pt-20"
              style={{ 
                transform: `translateY(${scrollY * -0.1}px)`,
                opacity: Math.max(0, 1 - scrollY * 0.002)
              }}>
           
-          {/* Professional Avatar with Glow Effect */}
+          {/* Animated Name with Glitch Effect - Moved Higher */}
+          <div className="space-y-6">
+            <div className="text-xl text-gray-600 dark:text-gray-400 font-sans tracking-wider animate-fade-in-up">
+              <span className="typewriter">Hello World! I'm</span>
+            </div>
+            
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-sans font-bold text-gray-900 dark:text-white glitch-text">
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent animate-gradient-x">
+                Aditya Mittha
+              </span>
+            </h1>
+            
+            {/* Typing Animation for Role */}
+            <div className="h-12 flex items-center justify-center">
+              <p className="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 font-sans">
+                <span className="typing-text">{currentText}</span>
+                <span className="animate-pulse">|</span>
+              </p>
+            </div>
+          </div>
+
+          {/* Professional Avatar with Glow Effect - Positioned Lower */}
           <div className="relative group">
-            <div className="w-48 h-48 rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 p-2 shadow-2xl hover-glow">
+            <div className="w-40 h-40 rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 p-2 shadow-2xl hover-glow">
               <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-all duration-500">
-                <div className="text-6xl font-orbitron font-bold text-transparent bg-gradient-to-br from-blue-600 to-indigo-600 bg-clip-text z-10">AM</div>
+                <div className="text-5xl font-sans font-bold text-transparent bg-gradient-to-br from-blue-600 to-indigo-600 bg-clip-text z-10">AM</div>
                 {/* Tech Pattern Overlay */}
                 <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-300">
                   <div className="w-full h-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 animate-pulse-slow"></div>
@@ -150,29 +170,8 @@ const Hero = () => {
               </div>
             </div>
             {/* Status Indicator */}
-            <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow-lg animate-bounce-subtle">
-              <div className="w-6 h-6 bg-white rounded-full animate-pulse"></div>
-            </div>
-          </div>
-
-          {/* Animated Name with Glitch Effect */}
-          <div className="space-y-4">
-            <div className="text-2xl text-gray-600 dark:text-gray-400 font-mono tracking-wider animate-fade-in-up">
-              <span className="typewriter">Hello World! I'm</span>
-            </div>
-            
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-orbitron font-bold text-gray-900 dark:text-white glitch-text">
-              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent animate-gradient-x">
-                Aditya Mittha
-              </span>
-            </h1>
-            
-            {/* Typing Animation for Role */}
-            <div className="h-16 flex items-center justify-center">
-              <p className="text-2xl sm:text-3xl text-gray-700 dark:text-gray-300 font-mono">
-                <span className="typing-text">{currentText}</span>
-                <span className="animate-pulse">|</span>
-              </p>
+            <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center shadow-lg animate-bounce-subtle">
+              <div className="w-5 h-5 bg-white rounded-full animate-pulse"></div>
             </div>
           </div>
 
@@ -186,7 +185,7 @@ const Hero = () => {
           </p>
 
           {/* Action Buttons with Hover Effects */}
-          <div className="flex flex-col sm:flex-row gap-6 pt-8">
+          <div className="flex flex-col sm:flex-row gap-6 pt-6">
             <Button 
               onClick={() => scrollToSection('projects')} 
               size="lg" 
@@ -208,7 +207,7 @@ const Hero = () => {
           </div>
 
           {/* Social Links with Enhanced Animations */}
-          <div className="flex justify-center space-x-6 pt-8">
+          <div className="flex justify-center space-x-6 pt-6">
             {[
               { icon: Github, href: "https://github.com", color: "hover:text-gray-900 dark:hover:text-white" },
               { icon: Linkedin, href: "https://linkedin.com/in/adityamittha", color: "hover:text-blue-600" },
@@ -229,7 +228,7 @@ const Hero = () => {
           </div>
 
           {/* Contact Info Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-8 w-full max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 w-full max-w-4xl">
             {[
               { icon: "📍", text: "Solapur, Maharashtra", color: "bg-blue-500" },
               { icon: "📧", text: "adityamittha09@gmail.com", color: "bg-green-500" },
