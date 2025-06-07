@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
 
       {/* Professional Status Indicator */}
-      <div className="absolute top-8 right-8 flex items-center space-x-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700">
+      <div className="absolute top-8 right-8 flex items-center space-x-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm py-2 rounded-full border border-gray-200 dark:border-gray-700 px-[19px] my-[15px] mx-[61px]">
         <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
         <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Available for Opportunities</span>
       </div>
