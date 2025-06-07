@@ -1,23 +1,20 @@
-
 import React from 'react';
 import { ArrowDown, Github, Linkedin, Mail, Phone, Download, Zap, Code, Cpu, CircuitBoard, Microchip } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
   const handleResumeDownload = () => {
     const resumeUrl = "https://drive.google.com/drive/folders/1beJ-FUR_qat3Jptq35LWjWsMjbk50w3D?usp=drive_link";
     window.open(resumeUrl, '_blank');
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-gray-900 dark:to-slate-800">
+  return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-gray-900 dark:to-slate-800">
       {/* Subtle Circuit Board Background Pattern */}
       <div className="absolute inset-0 opacity-5 dark:opacity-10">
         <svg className="w-full h-full" viewBox="0 0 400 400" fill="none">
@@ -35,10 +32,14 @@ const Hero = () => {
       <div className="absolute top-20 left-10 w-12 h-12 text-blue-400 opacity-20 floating-component">
         <CircuitBoard className="w-full h-full" />
       </div>
-      <div className="absolute top-32 right-20 w-10 h-10 text-indigo-500 opacity-20 floating-component" style={{animationDelay: '2s'}}>
+      <div className="absolute top-32 right-20 w-10 h-10 text-indigo-500 opacity-20 floating-component" style={{
+      animationDelay: '2s'
+    }}>
         <Microchip className="w-full h-full" />
       </div>
-      <div className="absolute bottom-32 left-20 w-8 h-8 text-slate-500 opacity-20 floating-component" style={{animationDelay: '4s'}}>
+      <div className="absolute bottom-32 left-20 w-8 h-8 text-slate-500 opacity-20 floating-component" style={{
+      animationDelay: '4s'
+    }}>
         <Cpu className="w-full h-full" />
       </div>
 
@@ -97,20 +98,11 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fadeInUp stagger-4">
-            <Button 
-              onClick={() => scrollToSection('projects')}
-              size="lg"
-              className="text-lg px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-white border-0"
-            >
+            <Button onClick={() => scrollToSection('projects')} size="lg" className="text-lg px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-white border-0">
               <Code className="mr-2" size={20} />
               View My Work
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              onClick={handleResumeDownload}
-              className="text-lg px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300 bg-white dark:bg-gray-900 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-gray-900"
-            >
+            <Button variant="outline" size="lg" onClick={handleResumeDownload} className="text-lg px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300 bg-white dark:bg-gray-900 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-gray-900">
               <Download className="mr-2" size={20} />
               Download Resume
             </Button>
@@ -118,32 +110,16 @@ const Hero = () => {
           
           {/* Professional Social Links */}
           <div className="flex justify-center space-x-4 mb-12 animate-fadeInUp stagger-5">
-            <a 
-              href="https://github.com" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-4 rounded-xl bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
-            >
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-4 rounded-xl bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700">
               <Github size={24} />
             </a>
-            <a 
-              href="https://linkedin.com/in/adityamittha" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-4 rounded-xl bg-white dark:bg-gray-800 text-blue-600 hover:text-blue-700 hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
-            >
+            <a href="https://linkedin.com/in/adityamittha" target="_blank" rel="noopener noreferrer" className="p-4 rounded-xl bg-white dark:bg-gray-800 text-blue-600 hover:text-blue-700 hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700">
               <Linkedin size={24} />
             </a>
-            <a 
-              href="mailto:adityamittha09@gmail.com"
-              className="p-4 rounded-xl bg-white dark:bg-gray-800 text-red-500 hover:text-red-600 hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
-            >
+            <a href="mailto:adityamittha09@gmail.com" className="p-4 rounded-xl bg-white dark:bg-gray-800 text-red-500 hover:text-red-600 hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700">
               <Mail size={24} />
             </a>
-            <a 
-              href="tel:+918010542551"
-              className="p-4 rounded-xl bg-white dark:bg-gray-800 text-green-500 hover:text-green-600 hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
-            >
+            <a href="tel:+918010542551" className="p-4 rounded-xl bg-white dark:bg-gray-800 text-green-500 hover:text-green-600 hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700">
               <Phone size={24} />
             </a>
           </div>
@@ -168,15 +144,8 @@ const Hero = () => {
         </div>
         
         {/* Professional Scroll Indicator */}
-        <button 
-          onClick={() => scrollToSection('about')}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 p-3 rounded-full bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200 dark:border-gray-700"
-        >
-          <ArrowDown size={20} className="animate-bounce" />
-        </button>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
