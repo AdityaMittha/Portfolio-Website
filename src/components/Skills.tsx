@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
@@ -10,24 +11,24 @@ const Skills = () => {
     {
       title: "Programming Languages",
       icon: <Code className="w-6 h-6" />,
-      gradient: "from-blue-500 to-purple-600",
+      gradient: "from-azure-500 to-azure-600",
       skills: [
         { 
           name: "C/C++", 
           level: 90, 
-          color: "from-blue-400 to-blue-600",
+          color: "from-azure-400 to-azure-600",
           logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
         },
         { 
           name: "Embedded C", 
           level: 85, 
-          color: "from-green-400 to-green-600",
+          color: "from-mint-400 to-mint-600",
           logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
         },
         { 
           name: "Python", 
           level: 80, 
-          color: "from-yellow-400 to-orange-600",
+          color: "from-azure-500 to-mint-500",
           logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
         },
       ]
@@ -35,30 +36,30 @@ const Skills = () => {
     {
       title: "Hardware & Boards",
       icon: <Cpu className="w-6 h-6" />,
-      gradient: "from-green-500 to-teal-600",
+      gradient: "from-mint-500 to-azure-600",
       skills: [
         { 
           name: "ESP32", 
           level: 95, 
-          color: "from-red-400 to-red-600",
+          color: "from-azure-400 to-azure-600",
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
         },
         { 
           name: "Arduino", 
           level: 90, 
-          color: "from-blue-400 to-blue-600",
+          color: "from-mint-400 to-azure-500",
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
         },
         { 
           name: "Raspberry Pi", 
           level: 80, 
-          color: "from-green-400 to-green-600",
+          color: "from-mint-500 to-mint-600",
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg"
         },
         { 
           name: "PCB Design", 
           level: 75, 
-          color: "from-purple-400 to-purple-600",
+          color: "from-azure-500 to-azure-600",
           logo: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=50&h=50&fit=crop&crop=center"
         },
       ]
@@ -66,30 +67,30 @@ const Skills = () => {
     {
       title: "Tools & Platforms",
       icon: <Wrench className="w-6 h-6" />,
-      gradient: "from-purple-500 to-pink-600",
+      gradient: "from-azure-600 to-mint-500",
       skills: [
         { 
           name: "Arduino IDE", 
           level: 95, 
-          color: "from-cyan-400 to-cyan-600",
+          color: "from-azure-400 to-mint-500",
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
         },
         { 
           name: "Proteus", 
           level: 85, 
-          color: "from-orange-400 to-orange-600",
+          color: "from-mint-400 to-azure-500",
           logo: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=50&h=50&fit=crop&crop=center"
         },
         { 
           name: "Wokwi", 
           level: 90, 
-          color: "from-indigo-400 to-indigo-600",
+          color: "from-azure-500 to-azure-600",
           logo: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=50&h=50&fit=crop&crop=center"
         },
         { 
           name: "Firebase", 
           level: 80, 
-          color: "from-yellow-400 to-yellow-600",
+          color: "from-mint-500 to-azure-500",
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
         },
       ]
@@ -97,30 +98,30 @@ const Skills = () => {
     {
       title: "IoT & Cloud",
       icon: <Cloud className="w-6 h-6" />,
-      gradient: "from-cyan-500 to-blue-600",
+      gradient: "from-mint-400 to-azure-500",
       skills: [
         { 
           name: "Blynk IoT", 
           level: 85, 
-          color: "from-green-400 to-green-600",
+          color: "from-mint-400 to-mint-600",
           logo: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=50&h=50&fit=crop&crop=center"
         },
         { 
           name: "Ubidots", 
           level: 80, 
-          color: "from-blue-400 to-blue-600",
+          color: "from-azure-400 to-azure-600",
           logo: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=50&h=50&fit=crop&crop=center"
         },
         { 
           name: "AWS IoT", 
           level: 75, 
-          color: "from-orange-400 to-orange-600",
+          color: "from-azure-500 to-mint-500",
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
         },
         { 
           name: "MQTT", 
           level: 80, 
-          color: "from-purple-400 to-purple-600",
+          color: "from-mint-500 to-azure-600",
           logo: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=50&h=50&fit=crop&crop=center"
         },
       ]
@@ -128,89 +129,90 @@ const Skills = () => {
     {
       title: "Core Technologies",
       icon: <Zap className="w-6 h-6" />,
-      gradient: "from-orange-500 to-red-600",
+      gradient: "from-azure-500 to-mint-400",
       skills: [
         { 
           name: "IoT Systems", 
           level: 90, 
-          color: "from-pink-400 to-pink-600",
+          color: "from-azure-400 to-mint-500",
           logo: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=50&h=50&fit=crop&crop=center"
         },
         { 
           name: "Embedded Systems", 
           level: 88, 
-          color: "from-teal-400 to-teal-600",
+          color: "from-mint-400 to-azure-500",
           logo: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=50&h=50&fit=crop&crop=center"
         },
         { 
           name: "VLSI", 
           level: 75, 
-          color: "from-indigo-400 to-indigo-600",
+          color: "from-azure-500 to-azure-600",
           logo: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=50&h=50&fit=crop&crop=center"
         },
         { 
           name: "Digital Circuits", 
           level: 85, 
-          color: "from-red-400 to-red-600",
+          color: "from-mint-500 to-mint-600",
           logo: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=50&h=50&fit=crop&crop=center"
         },
       ]
     }
   ];
 
-  // Large floating logos for background decoration
+  // Large floating logos for background decoration with sophisticated positioning
   const floatingLogos = [
     { 
       logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg", 
       position: "top-20 left-10", 
-      animation: "floating-tech",
+      animation: "floating-tech-elegant",
       size: "w-20 h-20"
     },
     { 
       logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", 
       position: "top-32 right-16", 
-      animation: "floating-tech-reverse",
+      animation: "floating-tech-gentle",
       size: "w-16 h-16"
     },
     { 
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg", 
       position: "bottom-20 left-20", 
-      animation: "floating-tech",
+      animation: "floating-tech-elegant",
       size: "w-24 h-24"
     },
     { 
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg", 
       position: "bottom-32 right-10", 
-      animation: "floating-tech-reverse",
+      animation: "floating-tech-gentle",
       size: "w-18 h-18"
     },
     { 
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", 
       position: "top-1/2 left-5", 
-      animation: "floating-tech",
+      animation: "floating-tech-elegant",
       size: "w-14 h-14"
     },
     { 
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg", 
       position: "top-1/3 right-5", 
-      animation: "floating-tech-reverse",
+      animation: "floating-tech-gentle",
       size: "w-22 h-22"
     },
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-purple-50/50 to-pink-50/50 dark:from-purple-900/20 dark:to-pink-900/20 relative overflow-hidden">
-      {/* Floating Background Logos */}
+    <section id="skills" className="py-20 gradient-bg-professional relative overflow-hidden">
+      {/* Sophisticated Background Logos */}
       <div className="absolute inset-0 pointer-events-none">
         {floatingLogos.map((item, index) => (
           <div 
             key={index}
-            className={`absolute ${item.position} ${item.animation} opacity-10 dark:opacity-5`}
+            className={`absolute ${item.position} ${item.animation} opacity-5 dark:opacity-3 elegant-float`}
+            style={{ animationDelay: `${index * 0.8}s` }}
           >
             <img 
               src={item.logo} 
               alt={`Floating tech logo ${index}`}
-              className={`${item.size} object-contain filter grayscale`}
+              className={`${item.size} object-contain filter grayscale subtle-glow`}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
               }}
@@ -219,15 +221,22 @@ const Skills = () => {
         ))}
       </div>
 
+      {/* Subtle geometric patterns */}
+      <div className="absolute inset-0 opacity-5 dark:opacity-10">
+        <div className="absolute top-10 left-1/4 w-32 h-32 bg-azure-200 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-1/4 w-40 h-40 bg-mint-200 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-10 w-24 h-24 bg-cool-gray-200 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+      </div>
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold font-jakarta text-foreground mb-4 text-fade-in">
             Skills & 
-            <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent ml-2">
+            <span className="gradient-text-primary ml-2">
               Technologies
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-cool-gray-500 dark:text-cool-gray-400 max-w-2xl mx-auto font-inter text-slide-up">
             Expertise in embedded systems, IoT development, and hardware-software integration
           </p>
         </div>
@@ -236,13 +245,13 @@ const Skills = () => {
           {skillCategories.map((category, categoryIndex) => (
             <Card 
               key={categoryIndex} 
-              className="p-6 card-hover border-2 hover:border-purple-200 dark:hover:border-purple-700 bg-gradient-to-br from-white to-purple-50/30 dark:from-gray-800 dark:to-purple-900/30"
+              className={`p-6 card-professional morphing-border shimmer-effect stagger-${categoryIndex + 1}`}
             >
-              <div className={`flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br ${category.gradient} text-white mb-4 mx-auto`}>
+              <div className={`flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br ${category.gradient} text-white mb-4 mx-auto subtle-glow`}>
                 {category.icon}
               </div>
               
-              <h3 className="text-xl font-semibold text-foreground mb-6 text-center">
+              <h3 className="text-xl font-semibold font-jakarta text-foreground mb-6 text-center">
                 {category.title}
               </h3>
               
@@ -264,12 +273,12 @@ const Skills = () => {
                             e.currentTarget.style.display = 'none';
                           }}
                         />
-                        <span className="text-sm font-medium text-foreground">{skill.name}</span>
+                        <span className="text-sm font-medium text-foreground font-inter">{skill.name}</span>
                       </div>
-                      <span className={`text-sm font-bold transition-all duration-300 ${
+                      <span className={`text-sm font-bold transition-all duration-300 font-jakarta ${
                         hoveredSkill === `${categoryIndex}-${skillIndex}` 
-                          ? 'text-purple-600 scale-110' 
-                          : 'text-muted-foreground'
+                          ? 'text-azure-600 scale-110' 
+                          : 'text-cool-gray-500'
                       }`}>
                         {skill.level}%
                       </span>
@@ -277,10 +286,10 @@ const Skills = () => {
                     <div className="relative">
                       <Progress 
                         value={skill.level} 
-                        className="h-3 bg-gray-200 dark:bg-gray-700" 
+                        className="h-3 bg-cool-gray-200 dark:bg-cool-gray-700 skill-bar-modern" 
                       />
                       <div 
-                        className={`absolute top-0 left-0 h-3 rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
+                        className={`absolute top-0 left-0 h-3 rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out skill-bar-fill-modern`}
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>
