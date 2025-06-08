@@ -13,9 +13,24 @@ const Skills = () => {
       icon: <Code className="w-6 h-6" />,
       gradient: "from-blue-500 to-purple-600",
       skills: [
-        { name: "C/C++", level: 90, color: "from-blue-400 to-blue-600" },
-        { name: "Embedded C", level: 85, color: "from-green-400 to-green-600" },
-        { name: "Python", level: 80, color: "from-yellow-400 to-orange-600" },
+        { 
+          name: "C/C++", 
+          level: 90, 
+          color: "from-blue-400 to-blue-600",
+          logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+        },
+        { 
+          name: "Embedded C", 
+          level: 85, 
+          color: "from-green-400 to-green-600",
+          logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
+        },
+        { 
+          name: "Python", 
+          level: 80, 
+          color: "from-yellow-400 to-orange-600",
+          logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+        },
       ]
     },
     {
@@ -23,10 +38,30 @@ const Skills = () => {
       icon: <Cpu className="w-6 h-6" />,
       gradient: "from-green-500 to-teal-600",
       skills: [
-        { name: "ESP32", level: 95, color: "from-red-400 to-red-600" },
-        { name: "Arduino", level: 90, color: "from-blue-400 to-blue-600" },
-        { name: "Raspberry Pi", level: 80, color: "from-green-400 to-green-600" },
-        { name: "PCB Design", level: 75, color: "from-purple-400 to-purple-600" },
+        { 
+          name: "ESP32", 
+          level: 95, 
+          color: "from-red-400 to-red-600",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
+        },
+        { 
+          name: "Arduino", 
+          level: 90, 
+          color: "from-blue-400 to-blue-600",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
+        },
+        { 
+          name: "Raspberry Pi", 
+          level: 80, 
+          color: "from-green-400 to-green-600",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg"
+        },
+        { 
+          name: "PCB Design", 
+          level: 75, 
+          color: "from-purple-400 to-purple-600",
+          logo: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=50&h=50&fit=crop&crop=center"
+        },
       ]
     },
     {
@@ -34,10 +69,30 @@ const Skills = () => {
       icon: <Wrench className="w-6 h-6" />,
       gradient: "from-purple-500 to-pink-600",
       skills: [
-        { name: "Arduino IDE", level: 95, color: "from-cyan-400 to-cyan-600" },
-        { name: "Proteus", level: 85, color: "from-orange-400 to-orange-600" },
-        { name: "Wokwi", level: 90, color: "from-indigo-400 to-indigo-600" },
-        { name: "Firebase", level: 80, color: "from-yellow-400 to-yellow-600" },
+        { 
+          name: "Arduino IDE", 
+          level: 95, 
+          color: "from-cyan-400 to-cyan-600",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
+        },
+        { 
+          name: "Proteus", 
+          level: 85, 
+          color: "from-orange-400 to-orange-600",
+          logo: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=50&h=50&fit=crop&crop=center"
+        },
+        { 
+          name: "Wokwi", 
+          level: 90, 
+          color: "from-indigo-400 to-indigo-600",
+          logo: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=50&h=50&fit=crop&crop=center"
+        },
+        { 
+          name: "Firebase", 
+          level: 80, 
+          color: "from-yellow-400 to-yellow-600",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+        },
       ]
     },
     {
@@ -45,10 +100,30 @@ const Skills = () => {
       icon: <Cloud className="w-6 h-6" />,
       gradient: "from-cyan-500 to-blue-600",
       skills: [
-        { name: "Blynk IoT", level: 85, color: "from-green-400 to-green-600" },
-        { name: "Ubidots", level: 80, color: "from-blue-400 to-blue-600" },
-        { name: "AWS IoT", level: 75, color: "from-orange-400 to-orange-600" },
-        { name: "MQTT", level: 80, color: "from-purple-400 to-purple-600" },
+        { 
+          name: "Blynk IoT", 
+          level: 85, 
+          color: "from-green-400 to-green-600",
+          logo: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=50&h=50&fit=crop&crop=center"
+        },
+        { 
+          name: "Ubidots", 
+          level: 80, 
+          color: "from-blue-400 to-blue-600",
+          logo: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=50&h=50&fit=crop&crop=center"
+        },
+        { 
+          name: "AWS IoT", 
+          level: 75, 
+          color: "from-orange-400 to-orange-600",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+        },
+        { 
+          name: "MQTT", 
+          level: 80, 
+          color: "from-purple-400 to-purple-600",
+          logo: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=50&h=50&fit=crop&crop=center"
+        },
       ]
     },
     {
@@ -56,10 +131,30 @@ const Skills = () => {
       icon: <Zap className="w-6 h-6" />,
       gradient: "from-orange-500 to-red-600",
       skills: [
-        { name: "IoT Systems", level: 90, color: "from-pink-400 to-pink-600" },
-        { name: "Embedded Systems", level: 88, color: "from-teal-400 to-teal-600" },
-        { name: "VLSI", level: 75, color: "from-indigo-400 to-indigo-600" },
-        { name: "Digital Circuits", level: 85, color: "from-red-400 to-red-600" },
+        { 
+          name: "IoT Systems", 
+          level: 90, 
+          color: "from-pink-400 to-pink-600",
+          logo: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=50&h=50&fit=crop&crop=center"
+        },
+        { 
+          name: "Embedded Systems", 
+          level: 88, 
+          color: "from-teal-400 to-teal-600",
+          logo: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=50&h=50&fit=crop&crop=center"
+        },
+        { 
+          name: "VLSI", 
+          level: 75, 
+          color: "from-indigo-400 to-indigo-600",
+          logo: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=50&h=50&fit=crop&crop=center"
+        },
+        { 
+          name: "Digital Circuits", 
+          level: 85, 
+          color: "from-red-400 to-red-600",
+          logo: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=50&h=50&fit=crop&crop=center"
+        },
       ]
     }
   ];
@@ -102,7 +197,17 @@ const Skills = () => {
                     onMouseLeave={() => setHoveredSkill(null)}
                   >
                     <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium text-foreground">{skill.name}</span>
+                      <div className="flex items-center space-x-2">
+                        <img 
+                          src={skill.logo} 
+                          alt={`${skill.name} logo`}
+                          className="w-5 h-5 object-contain"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                          }}
+                        />
+                        <span className="text-sm font-medium text-foreground">{skill.name}</span>
+                      </div>
                       <span className={`text-sm font-bold transition-all duration-300 ${
                         hoveredSkill === `${categoryIndex}-${skillIndex}` 
                           ? 'text-purple-600 scale-110' 
