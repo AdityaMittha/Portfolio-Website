@@ -10,14 +10,27 @@ const Certifications = () => {
 
   const certifications = [
     {
-      title: "AWS IoT Training",
+      title: "Getting Started with AWS IoT",
       issuer: "Amazon Web Services (AWS)",
-      date: "September 2024",
+      date: "September 2, 2024",
       type: "Cloud & IoT",
-      description: "Comprehensive training on AWS IoT services, device management, and cloud integration for IoT applications.",
-      skills: ["AWS IoT Core", "Device Management", "Cloud Integration", "MQTT"],
+      description: "Successfully completed AWS IoT training covering IoT device management, connectivity, and cloud integration fundamentals.",
+      skills: ["AWS IoT Core", "Device Management", "Cloud Integration", "MQTT", "IoT Security"],
       credentialUrl: "https://drive.google.com/drive/folders/1beJ-FUR_qat3Jptq35LWjWsMjbk50w3D?usp=drive_link",
-      certificateFile: "aws-iot-certificate.pdf"
+      certificateFile: "/lovable-uploads/a38dea07-ed1c-48f9-bad5-8e698d3349e9.png",
+      featured: true
+    },
+    {
+      title: "Digital Electronics & VLSI",
+      issuer: "Codec Technologies Pvt. Ltd.",
+      date: "June 6, 2025",
+      type: "AICTE Approved",
+      certificateId: "E19E86-0116588288923",
+      description: "ICAC recognized certificate in Digital Electronics & VLSI training, covering fundamental concepts and practical applications in semiconductor technology.",
+      skills: ["Digital Electronics", "VLSI Design", "Logic Circuits", "Semiconductor Technology", "Circuit Analysis"],
+      credentialUrl: "https://drive.google.com/drive/folders/1beJ-FUR_qat3Jptq35LWjWsMjbk50w3D?usp=drive_link",
+      certificateFile: "/lovable-uploads/d79a52c8-402e-430c-89dc-8dd4639776f2.png",
+      featured: true
     },
     {
       title: "Design Thinking for Innovation",
@@ -28,18 +41,6 @@ const Certifications = () => {
       skills: ["Design Thinking", "Innovation", "Problem Solving", "User Experience"],
       credentialUrl: "https://drive.google.com/drive/folders/1beJ-FUR_qat3Jptq35LWjWsMjbk50w3D?usp=drive_link",
       certificateFile: "design-thinking-certificate.pdf"
-    },
-    {
-      title: "Digital Electronics & VLSI",
-      issuer: "Codec Technologies Pvt. Ltd.",
-      date: "June 2025",
-      type: "AICTE Approved",
-      certificateId: "E19E86-0116588288923",
-      description: "Industry-approved certification in digital electronics fundamentals and VLSI design principles.",
-      skills: ["Digital Electronics", "VLSI Design", "Logic Circuits", "Semiconductor Technology"],
-      credentialUrl: "https://drive.google.com/drive/folders/1beJ-FUR_qat3Jptq35LWjWsMjbk50w3D?usp=drive_link",
-      certificateFile: "Aditya Anand Mittha - Certificate.pdf",
-      featured: true
     }
   ];
 
@@ -112,21 +113,30 @@ const Certifications = () => {
               </div>
               
               <div className="flex space-x-2">
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  className="flex-1"
-                  asChild
-                >
-                  <a 
-                    href={cert.credentialUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <Eye className="w-4 h-4 mr-1" />
-                    View Certificate
-                  </a>
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="flex-1"
+                    >
+                      <Eye className="w-4 h-4 mr-1" />
+                      View Certificate
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
+                    <DialogHeader>
+                      <DialogTitle>{cert.title}</DialogTitle>
+                    </DialogHeader>
+                    <div className="flex justify-center">
+                      <img 
+                        src={cert.certificateFile} 
+                        alt={`${cert.title} Certificate`}
+                        className="max-w-full h-auto rounded-lg shadow-lg"
+                      />
+                    </div>
+                  </DialogContent>
+                </Dialog>
                 
                 <Button variant="ghost" size="sm" asChild>
                   <a 
