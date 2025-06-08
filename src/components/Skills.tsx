@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
@@ -159,9 +158,68 @@ const Skills = () => {
     }
   ];
 
+  // Large floating logos for background decoration
+  const floatingLogos = [
+    { 
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg", 
+      position: "top-20 left-10", 
+      animation: "floating-tech",
+      size: "w-20 h-20"
+    },
+    { 
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", 
+      position: "top-32 right-16", 
+      animation: "floating-tech-reverse",
+      size: "w-16 h-16"
+    },
+    { 
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg", 
+      position: "bottom-20 left-20", 
+      animation: "floating-tech",
+      size: "w-24 h-24"
+    },
+    { 
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg", 
+      position: "bottom-32 right-10", 
+      animation: "floating-tech-reverse",
+      size: "w-18 h-18"
+    },
+    { 
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", 
+      position: "top-1/2 left-5", 
+      animation: "floating-tech",
+      size: "w-14 h-14"
+    },
+    { 
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg", 
+      position: "top-1/3 right-5", 
+      animation: "floating-tech-reverse",
+      size: "w-22 h-22"
+    },
+  ];
+
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-purple-50/50 to-pink-50/50 dark:from-purple-900/20 dark:to-pink-900/20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="py-20 bg-gradient-to-br from-purple-50/50 to-pink-50/50 dark:from-purple-900/20 dark:to-pink-900/20 relative overflow-hidden">
+      {/* Floating Background Logos */}
+      <div className="absolute inset-0 pointer-events-none">
+        {floatingLogos.map((item, index) => (
+          <div 
+            key={index}
+            className={`absolute ${item.position} ${item.animation} opacity-10 dark:opacity-5`}
+          >
+            <img 
+              src={item.logo} 
+              alt={`Floating tech logo ${index}`}
+              className={`${item.size} object-contain filter grayscale`}
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Skills & 
