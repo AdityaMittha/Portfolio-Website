@@ -137,13 +137,13 @@ const Hero = () => {
                opacity: Math.max(0, 1 - scrollY * 0.002)
              }}>
           
-          {/* Animated Name with Glitch Effect - Moved Higher */}
+          {/* Animated Name with Professional Typography */}
           <div className="space-y-6">
-            <div className="text-xl text-gray-600 dark:text-gray-400 font-sans tracking-wider animate-fade-in-up">
+            <div className="text-xl text-gray-600 dark:text-gray-400 font-inter tracking-wider animate-fade-in-up">
               <span className="typewriter">Hello World! I'm</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-sans font-bold text-gray-900 dark:text-white glitch-text">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-jakarta font-bold text-gray-900 dark:text-white glitch-text">
               <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent animate-gradient-x">
                 Aditya Mittha
               </span>
@@ -151,7 +151,7 @@ const Hero = () => {
             
             {/* Typing Animation for Role */}
             <div className="h-12 flex items-center justify-center">
-              <p className="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 font-sans">
+              <p className="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 font-inter font-medium">
                 <span className="typing-text">{currentText}</span>
                 <span className="animate-pulse">|</span>
               </p>
@@ -162,7 +162,7 @@ const Hero = () => {
           <div className="relative group">
             <div className="w-40 h-40 rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 p-2 shadow-2xl hover-glow">
               <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-all duration-500">
-                <div className="text-5xl font-sans font-bold text-transparent bg-gradient-to-br from-blue-600 to-indigo-600 bg-clip-text z-10">AM</div>
+                <div className="text-5xl font-jakarta font-bold text-transparent bg-gradient-to-br from-blue-600 to-indigo-600 bg-clip-text z-10">AM</div>
                 {/* Tech Pattern Overlay */}
                 <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-300">
                   <div className="w-full h-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 animate-pulse-slow"></div>
@@ -176,7 +176,7 @@ const Hero = () => {
           </div>
 
           {/* Enhanced Description */}
-          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-4xl leading-relaxed animate-fade-in-up-delay font-light">
+          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-4xl leading-relaxed animate-fade-in-up-delay font-inter">
             Passionate about creating innovative embedded solutions with 
             <span className="text-blue-600 font-semibold hover:text-blue-700 transition-colors"> ESP32</span>, 
             <span className="text-indigo-600 font-semibold hover:text-indigo-700 transition-colors"> Arduino</span>, and 
@@ -189,7 +189,7 @@ const Hero = () => {
             <Button 
               onClick={() => scrollToSection('projects')} 
               size="lg" 
-              className="group text-lg px-10 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-white border-0 font-semibold tracking-wide"
+              className="group text-lg px-10 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-white border-0 font-jakarta font-semibold tracking-wide"
             >
               <Code className="mr-3 group-hover:rotate-12 transition-transform duration-300" size={24} />
               View My Work
@@ -199,7 +199,7 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               onClick={handleResumeDownload} 
-              className="group text-lg px-10 py-4 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300 bg-white/90 backdrop-blur-sm dark:bg-gray-900/90 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-gray-900 font-semibold tracking-wide"
+              className="group text-lg px-10 py-4 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300 bg-white/90 backdrop-blur-sm dark:bg-gray-900/90 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-gray-900 font-jakarta font-semibold tracking-wide"
             >
               <Download className="mr-3 group-hover:animate-bounce transition-all duration-300" size={24} />
               Download Resume
@@ -241,7 +241,7 @@ const Hero = () => {
               >
                 <div className="flex items-center justify-center space-x-3">
                   <div className={`w-3 h-3 ${contact.color} rounded-full animate-pulse`}></div>
-                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{contact.text}</span>
+                  <span className="text-sm font-inter font-medium text-gray-700 dark:text-gray-300">{contact.text}</span>
                 </div>
               </div>
             ))}

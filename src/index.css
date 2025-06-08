@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -101,17 +101,17 @@
   }
 
   body {
-    @apply bg-background text-foreground font-mono;
+    @apply bg-background text-foreground font-inter;
     cursor: none;
   }
   
-  /* Custom Font Classes */
-  .font-orbitron {
-    font-family: 'Orbitron', monospace;
+  /* Professional Font Classes */
+  .font-inter {
+    font-family: 'Inter', sans-serif;
   }
   
-  .font-jetbrains {
-    font-family: 'JetBrains Mono', monospace;
+  .font-jakarta {
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 }
 
@@ -232,7 +232,8 @@
   }
 }
 
-/* Advanced Keyframes */
+/* ... keep existing code (all keyframes and animations) the same ... */
+
 @keyframes floating-tech {
   0%, 100% {
     transform: translateY(0px) rotate(0deg) scale(1);
